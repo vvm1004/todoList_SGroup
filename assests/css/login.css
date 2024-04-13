@@ -1,0 +1,152 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Sử dụng chiều cao của cửa sổ trình duyệt */
+    background-color: #FFF;
+    /* Màu nền tổng thể */
+    position: relative;
+}
+
+.app_img_1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+}
+
+.app_img_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+}
+
+.app_img_3 {
+    position: absolute;
+    bottom: 0px;
+    right: 280px;
+}
+
+.container {
+    width: 900px;
+    height: auto;
+    display: flex;
+    padding-right: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    z-index: 1;
+
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.18);
+
+}
+
+.mark_group {
+    display: flex;
+}
+
+.mark_group img {
+    max-width: 100%;
+    /* Hình ảnh không vượt quá kích thước container */
+    height: auto;
+    /* Đảm bảo tỷ lệ khung hình bảo toàn */
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: rgba(209, 223, 236, 0.90);
+}
+
+.login_header {
+    padding-bottom: 40px;
+}
+
+.login_header span {
+    padding: 8px;
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.login_header .login {
+    border-bottom: 2px solid #11698E;
+}
+
+.login-email_container {
+    padding-bottom: 20px;
+}
+
+.login_email-label,
+.login_password-label {
+    color: #393F44;
+
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+#login_email,
+#login_password {
+    width: 278px;
+    padding: 8px 12px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    background: var(--White, #FFF);
+
+}
+
+.login-remeber {
+    color:  rgba(0, 0, 0, 0.65);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 18px;
+}
+
+.btn-login {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px 15px;
+    border-radius: 41px;
+    background: #00A6DA;
+
+    /* drop-shadow/button-primary */
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+    /* Màu nền xanh nhạt khi hover */
+}
+
+.error {
+    color: #FF0000; 
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    margin-top: 5px; 
+    display: block; /* Hiển thị lỗi dưới dạng block để nó nằm dưới input field */
+}
+/* Mobile */
+
+@media (max-width: 46.1875em) {
+    .container {
+        width: 100%;
+        height: 70%;
+    }
+}

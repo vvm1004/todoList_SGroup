@@ -1,0 +1,370 @@
+.app {
+    height: 100vh;
+    background-color: #FFF;
+    /* Màu nền tổng thể */
+}
+
+
+
+.todo-list {
+    border-radius: 4px;
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-right: 44px; */
+}
+
+.text {
+    color: #FFF;
+    margin-left: 10px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.number-box {
+    border-radius: 4px;
+    width: 28px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50px;
+}
+
+.number-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.todo {
+    background: #00A6DA;
+
+}
+
+.todo .text {
+    margin-right: 188px;
+}
+
+.todo .number-box {
+    background: #00CDDA;
+}
+
+.doing {
+    background: rgba(204, 172, 3, 0.56);
+}
+
+.doing .text {
+    margin-right: 182px;
+}
+
+.doing .number-box {
+    background: #DAB700;
+}
+
+.completed {
+    background: #3BC057;
+}
+
+.completed .text {
+    margin-right: 148px;
+}
+
+.completed .number-box {
+    background: #69CE7E;
+}
+
+.blocked {
+    background: #E74C3C;
+}
+
+.blocked .text {
+    margin-right: 172px;
+}
+
+.blocked .number-box {
+    background: #ec3520;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    margin-right: 46px;
+}
+
+/* Styles for task boxes */
+.box {
+    width: 100%;
+    height: 216px;
+    background-color: #FFF;
+    border-radius: 10px; /* Làm cong góc */
+    margin-top: 10px; /* Tạo khoảng cách với box trên đó */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1), 0 8px 20px rgba(0, 0, 0, .1); /* Đổ bóng */
+    padding: 10px; /* Thêm padding để tạo khoảng cách với nội dung bên trong box */
+}
+
+
+
+.category {
+    color: #4D8EFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category img {
+    width: 18px;
+    height: 18.228px;
+}
+
+.title-line {
+    width: 80%;
+    height: 1px;
+    background: #DBDBDB;
+}
+
+.title {
+    color: #393939;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px;
+
+}
+
+.content {
+    color: #5A5C63;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+.date-time {
+    color: #5A5C63;
+
+    font-family: "Plus Jakarta Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.date-time img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logout{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 60px; */
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.header>img {
+    padding-top: 20px;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Đặt màu nền với độ trong suốt */
+    z-index: 9999;
+    /* Đảm bảo popup hiển thị trên các phần khác */
+}
+
+.popup-main {
+    padding: 20px;
+    /* Tăng khoảng cách giữa nội dung và khung popup */
+    border-radius: 10px;
+    /* Làm cong góc cho khung popup */
+    width: 500px;
+    /* Đặt chiều rộng khung popup */
+    background-color: #ffffff;
+    /* Màu nền của khung popup */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Đổ bóng cho khung popup */
+}
+
+.popup-main h1 {
+    margin-top: 0;
+    /* Loại bỏ khoảng cách trên đầu tiêu đề */
+    font-size: 20px;
+    /* Cỡ chữ cho tiêu đề */
+}
+
+.popup-main input[type="text"],
+.popup-main textarea {
+    width: 100%;
+    /* Đặt chiều rộng cho các input và textarea */
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các input và textarea */
+    padding: 10px;
+    /* Khoảng cách nội dung với viền của input và textarea */
+    border: 1px solid #ccc;
+    /* Đặt viền cho input và textarea */
+    border-radius: 5px;
+    /* Làm cong góc cho input và textarea */
+}
+
+.popup-main textarea {
+    height: 80px;
+}
+
+.popup-main button {
+    width: 100%;
+    /* Đặt chiều rộng cho nút */
+    padding: 10px;
+    /* Khoảng cách nội dung với viền của nút */
+    border: none;
+    /* Loại bỏ viền của nút */
+    border-radius: 5px;
+    /* Làm cong góc cho nút */
+    background-color: #007bff;
+    /* Màu nền của nút */
+    color: #ffffff;
+    /* Màu chữ của nút */
+    cursor: pointer;
+    /* Đổi hình con trỏ khi di chuột qua nút */
+}
+
+.popup-main button:hover {
+    background-color: #0056b3;
+    /* Màu nền của nút khi di chuột qua */
+}
+
+.checkbox-radio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-main input[type="radio"] {
+    margin-right: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.doing-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.completed-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocked-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-container {
+    width: 100%;
+    max-height: 400px;
+    /* height: 1000px; */
+    /* background-color: #0056b3; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.input-error {
+    border: 1px solid #ff0000 !important;
+    /* Red border color */
+}
+
+/* Tablet */
+
+@media (min-width:740px) and (max-width: 1023px) {
+    .completed-container {
+        margin-top: 40px;
+    }
+
+    .blocked-container {
+        margin-top: 40px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+
+    .header{
+        flex-direction: column;
+    }
+    .header-text{
+        margin: 20px 0; /* Thay đổi margin để tạo khoảng cách */
+        padding: 10px 20px; /* Thêm padding để tạo khoảng cách và định dạng */
+        border: 1px solid #ccc; /* Thêm viền */
+        border-radius: 5px; /* Làm cong góc */
+        /* margin-bottom: 40px; */
+    }
+    .popup-main{
+        width: 350px;
+    }
+}
+
+/* Cập nhật CSS cho task box khi được kéo */
+.box.dragging {
+    opacity: 0.5; /* Giảm độ trong suốt của task box khi kéo */
+    /* Thêm các hiệu ứng thị giảm kích thước, shadow, v.v. tùy ý */
+}

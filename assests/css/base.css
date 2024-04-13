@@ -1,0 +1,14 @@
+/* .wrapper {
+    width: 1280px;
+    height: 1024px;
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* html,
+body {
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+} */
